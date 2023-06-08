@@ -1,0 +1,97 @@
+.team-sect {
+    padding-top: 122px;
+}
+
+.team {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include for-table-only {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    &__left {
+        max-width: 519px;
+        @include for-mobile-only {
+            text-align: center;
+        }
+        &__title {
+            font-family: $title-fonts;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 48px;
+            letter-spacing: -2px;
+            color: $text-color;
+            @include for-mobile-only {
+                font-size: 24px;
+                line-height: 36px;
+            }
+        }
+        &__text {
+            font-family: $title-fonts;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 32px;
+            color: $text-color;
+            margin: 16px 0;
+            @include for-mobile-only {
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+        &__textt {
+            font-family: $text-fonts;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: $text-color;
+            @include for-mobile-only {
+                font-size: 14px;
+                line-height: 26px;
+            }
+        }
+    }
+    &__right {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        &__shapes {
+            position: absolute;
+            top: 20%;
+            left: -50px;
+            @include for-table-only {
+                left: -12px;
+            }
+            @include for-mobile-only {
+                display: none;
+            }
+        }
+        &__img {
+            width: 100%;
+            @include for-table-only {
+                width: 83%;
+            }
+        }
+    }
+}
+
+.started-sect {
+    padding: 128px 0;
+}
+
+.started {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include for-table-only {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__img {
+        width: 50%;
+        @include for-table-only {
+            width: 60%;
+        }
+    }
+}

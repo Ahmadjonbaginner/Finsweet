@@ -1,0 +1,89 @@
+.blogs {
+    padding: 94px 0 66px 0;
+    position: relative;
+    &__title {
+        font-family: $title-fonts;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: -2px;
+        color: #000000;
+        @include for-table-only {
+            text-align: center;
+        }
+        @include for-mobile-only {
+            font-size: 26px;
+            line-height: 38px;
+        }
+    }
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 64px;
+        @include for-table-only {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__card {
+            max-width: 405px;
+            display: flex;
+            flex-direction: column;
+            &__img {
+                width: 100%;
+                height: 50%;
+            }
+            &__link {
+                margin-top: 32px;
+                display: block;
+                font-family: $text-fonts;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                color: #4C4C4C;
+                @include for-table-only {
+                    text-align: center;
+                }
+            }
+            &__title {
+                margin: 16px 0;
+                font-family: $text-fonts;
+                font-weight: 700;
+                font-size: 28px;
+                line-height: 40px;
+                letter-spacing: -1px;
+                color: $text-color;
+                @include for-table-only {
+                    text-align: center;
+                }
+                @include for-mobile-only {
+                    font-size: 24px;
+                    line-height: 36px;
+                }
+            }
+            &__text {
+                font-family: $text-fonts;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                color: $text-color;
+                opacity: 0.7;
+                @include for-table-only {
+                    text-align: center;
+                }
+                @include for-mobile-only {
+                    font-size: 14px;
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+    &__line {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        opacity: 0.3;
+        border: 1px solid #6D6E76;
+    }
+}

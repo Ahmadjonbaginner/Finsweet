@@ -1,0 +1,46 @@
+footer {
+    padding: 54px 0;
+    background-color: $text-color;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include for-table-only {
+        flex-direction: column;
+        text-align: center;
+        row-gap: 25px;
+    }
+    &__left {
+        font-family: $text-fonts;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: $main-color;
+        opacity: 0.7;
+        display: flex;
+        flex-direction: column;
+        @include for-mobile-only {
+            font-size: 14px;
+            line-height: 26px;
+        }
+        &__gmail {
+            &__link {
+                font-family: $text-fonts;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                color: $main-color;
+                opacity: 0.7;
+            }
+        }
+    }
+    &__right {
+        display: flex;
+        align-items: center;
+        column-gap: 25px;
+    }
+}

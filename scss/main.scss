@@ -1,0 +1,29 @@
+@import './mixin';
+@import './fonts';
+@import './veriables';
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1330px;
+    padding: 0 25px;
+    margin: 0 auto;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.hero {
+    background-image: url('./../images/hero__bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@import './home/home';

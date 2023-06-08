@@ -1,0 +1,70 @@
+.catigory {
+    padding: 96px 0 73px 0;
+    &__title {
+        font-family: $title-fonts;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: -2px;
+        color: $text-color;
+        text-align: center;
+        @include for-mobile-only {
+            font-size: 26px;
+            line-height: 38px;
+        }
+    }
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 71px;
+        flex-wrap: wrap;
+        row-gap: 25px;
+        @include for-table-only {
+            justify-content: center;
+            column-gap: 25px;
+        }
+        &__card {
+            padding: 31px 32px;
+            max-width: 296px;
+            min-height: 221px;
+            border: 1px solid #6d6e7657;
+            &__img {
+                background-color: $main-color;
+                border-radius: 10px;
+            }
+            &__title {
+                font-family: $title-fonts;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 28px;
+                line-height: 40px;
+                letter-spacing: -1px;
+                color: $text-color;
+                display: block;
+                @include for-mobile-only {
+                    font-size: 24px;
+                    line-height: 36px;
+                }
+            }
+            &__text {
+                font-family: $text-fonts;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                color: $madium-grey;
+                @include for-mobile-only {
+                    font-size: 14px;
+                    line-height: 26px;
+                }
+            }
+        }
+        &__card:hover {
+            background-color: $check-color;
+        }
+    }
+}
+
+.catigory__img {
+    padding: 12px 12px;
+}
